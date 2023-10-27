@@ -107,7 +107,7 @@ body{
 .about p{
   color: #000;
   font-weight: 500;
-
+  padding: 0.4em 0;
 }
 #project{
   background-color: var(--secondary-color);
