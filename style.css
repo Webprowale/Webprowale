@@ -11,6 +11,13 @@
   -bs-navbar-toggler-border-color: 0;
    
 }
+.col{
+  height: 360px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
 body{
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
@@ -29,31 +36,28 @@ body{
 .navbar-toggler{
  background-color:transparent;
  border-radius: 50%;
+ border: 2px dotted  rgb(255, 145, 0);
  padding: 10px;
 }
 .hbtn{
   background-color: white;
   color: var(--text-color);
-  
+  transition: all 0.2s;
+}
+.hbtn:hover{
+  background-color:  rgb(255, 145, 0);
+  color: white;
 }
 
 .hero{
-  background-color: var(--tartiary-color);
+  background-image: url(3d\ render.jpg);
+  background-position: 70% 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--primary-color);
-  display: grid;
-  grid-template-columns: (12, 1fr);
-  grid-auto-rows: (50px, auto);
-  place-items: center;
-  column-gap: 10px;
+ height: 87vh;
 }
-.hero-image{
-  grid-column: 9/10;
-  grid-row: 1/2;
-}
-.headings{
-  grid-column: 5/8;
-  grid-row: 1/2;
-}
+
 .fa-brands,.fa-solid{
   color: var(--secondary-color);
   background-color: var(--text-color);
@@ -220,6 +224,9 @@ body{
 }
 
 @media (max-width:834px) {
+  .hero{
+    height: 100vh;
+  }
   .hero-image{
     grid-column: 1/3;
 
