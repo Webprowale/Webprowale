@@ -220,7 +220,7 @@ body{
 }
 @media (max-width:430px) {
   .hero{
-    height: 60vh !important;
+    height: 80vh !important;
     background-position: 30% !important;
   }
   .headings{
