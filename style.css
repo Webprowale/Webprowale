@@ -8,14 +8,10 @@
   --secondary-color: #dccfed;
   --tartiary-color: #291c3a;
   --text-color: #331c52;
-  -bs-navbar-toggler-border-color: 0;
    
 }
 .row{
-  --bs-gutter-x: 2em;
-  --bs-gutter-y: 1.8rem;
   gap: 40px;
-  justify-content: center;
 }
 a{
   text-decoration: none;
@@ -53,7 +49,7 @@ body{
 }
 
 .hero{
-  background-image: url(3d\ render.jpg);
+  background-image: url(img/3d\ render.jpg);
   background-position: 70% 5%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,7 +65,8 @@ body{
   margin: 0 5px;
 }
 .headings{
-  margin-top: 120px;
+  margin: auto;
+  margin-top: 80px;
 }
 .skill{
   background: linear-gradient(100Deg,  #331c52, #8121d0);
@@ -124,14 +121,7 @@ body{
   color: #000;
   margin-bottom: 5em;
 }
-.proj-1{
-  position: relative;
-}
-.proj-1 .img-pro{
-  background-color: var(--primary-color);
-  width: 400px;
-  border-radius: 20px;
-}
+
 .proj-1 h5{
   position: absolute;
   left: 60px;
@@ -139,12 +129,12 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .proj{
-  width: 300px;
   border-radius: 3px;
   box-shadow: 0.2px 4px 5px #333;
   background-color: var(--secondary-color);
   position: relative;
   overflow: hidden;
+  max-width: 400px;
 }
 .proj img{
   width: 100%;
@@ -228,10 +218,22 @@ body{
   margin-bottom: -1.5em;
 
 }
+@media (max-width:430px) {
+  .hero{
+    height: 60vh !important;
+    background-position: 30% !important;
+  }
+  .headings{
+    margin-top: 160px !important;
+  }
+}
 
 @media (max-width:834px) {
+    .hbtn{
+      width: 100%;
+    }
   .hero{
-    height: 100vh;
+    height: 96vh;
     background-position: 40%;
   }
   .skils{
@@ -245,6 +247,6 @@ body{
     width: 100%;
   }
   .headings{
-   width: 200px;
+   margin-top: 200px;
   }
 }
